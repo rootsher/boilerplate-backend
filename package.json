@@ -10,16 +10,21 @@
   "scripts": {
     "start": "nest start --watch",
     "build": "nest build",
-    "start:prod": "node dist/main"
+    "start:prod": "node dist/main",
+    "migration:generate": "typeorm migration:generate -n Version",
+    "migration:run": "typeorm migration:run"
   },
   "dependencies": {
     "@nestjs/common": "^8.2.4",
     "@nestjs/core": "^8.2.4",
     "@nestjs/platform-express": "^8.2.4",
     "@nestjs/swagger": "^5.1.5",
+    "@nestjs/typeorm": "^8.0.2",
+    "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.1",
-    "swagger-ui-express": "^4.3.0"
+    "swagger-ui-express": "^4.3.0",
+    "typeorm": "^0.2.41"
   },
   "devDependencies": {
     "@nestjs/cli": "^8.1.6",
