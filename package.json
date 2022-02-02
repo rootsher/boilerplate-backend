@@ -10,7 +10,7 @@
   "scripts": {
     "start": "nest start --watch",
     "build": "nest build",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/main",
     "migration:generate": "typeorm migration:generate -n Version",
     "migration:run": "typeorm migration:run"
   },
